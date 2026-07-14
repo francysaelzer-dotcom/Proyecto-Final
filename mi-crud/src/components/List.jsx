@@ -1,9 +1,9 @@
 import React from 'react';
 import Item from './Item.jsx';
 
-function List({ items, onEdit, onDelete }) {
+function List({ items, onEdit, onDelete, onToggle }) {
   if (items.length === 0) {
-    return <p style={{ textAlign: 'center', color: '#a0aec0' }}>No hay elementos en la lista.</p>;
+    return <p style={{ textAlign: 'center', color: '#a0aec0' }}>No hay elementos para mostrar.</p>;
   }
 
   return (
@@ -14,6 +14,7 @@ function List({ items, onEdit, onDelete }) {
           item={item} 
           onEdit={onEdit} 
           onDelete={onDelete} 
+          onToggle={onToggle} // Conexión con el ítem
         />
       ))}
     </ul>

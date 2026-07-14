@@ -1,9 +1,15 @@
 import React from 'react';
 
-function Item({ item, onEdit, onDelete }) {
+function Item({ item, onEdit, onDelete, onToggle }) {
   return (
     <li className="item-row">
-      <span className="item-text">
+      {/* Al hacer clic en el texto, se tacha visualmente */}
+      <span 
+        className={`item-text ${item.completed ? 'completed' : ''}`}
+        onClick={() => onToggle(item.id)}
+        title="Haz clic para marcar como completado"
+        style={{ cursor: 'pointer', textDecoration: item.completed ? 'line-through' : 'none' }}
+      >
         {item.text}
       </span>
       <div className="button-group">

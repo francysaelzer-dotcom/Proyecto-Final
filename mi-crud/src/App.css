@@ -1,8 +1,10 @@
 /* Contenedor central (tarjeta con bordes redondeados y sombra) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
 .card-container {
     max-width: 500px;
     margin: 50px auto;
-    background: #ffffff;
+    background: #bbeaff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -12,9 +14,13 @@
 
 /* Título principal */
 .title {
-    text-align: center;
-    color: #1a365d;
-    margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+
+  font-size: 35px;
+  font-weight: 900;
+  color: #312d72;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Estructura del Formulario */
@@ -27,7 +33,7 @@
 .input-text {
     flex: 1;
     padding: 10px;
-    border: 1px solid #cbd5e0;
+    border: 1px solid #9ac1f5;
     border-radius: 6px;
     font-size: 1rem;
     outline: none;
@@ -41,7 +47,7 @@
 
 /* Botón destacado[cite: 4] */
 .btn-submit {
-    background-color: #3182ce;
+    background-color: #312d72;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -52,7 +58,7 @@
 }
 
 .btn-submit:hover {
-    background-color: #2b6cb0;
+    background-color: #1512b9;
 }
 
 /* Barra de utilidades (Buscador, contador y botón borrar todo) */
@@ -66,7 +72,7 @@
 .input-search {
     flex: 1;
     padding: 8px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #a7bafa;
     border-radius: 6px;
 }
 
@@ -77,7 +83,7 @@
 }
 
 .btn-danger-all {
-    background-color: #e53e3e;
+    background-color: #a34d4d;
     color: white;
     border: none;
     padding: 8px 12px;
@@ -87,7 +93,7 @@
 }
 
 .btn-danger-all:hover {
-    background-color: #c53030;
+    background-color: #913131;
 }
 
 /* Elementos de la lista[cite: 4] */
@@ -102,12 +108,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px;
-    border-bottom: 1px solid #edf2f7;
+    border-bottom: 1px solid #f5f5f7;
     transition: background-color 0.2s;
 }
 
 .item-row:hover {
-    background-color: #f7fafc;
+    background-color: #95c1fc;
 }
 
 .item-text {
@@ -134,30 +140,30 @@
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    color: white;
+    color: rgb(253, 251, 251);
 }
 
 /* Editar en verde, Eliminar en rojo[cite: 4] */
 .btn-edit {
-    background-color: #38a169;
+    background-color: #62a581;
 }
 
 .btn-edit:hover {
-    background-color: #2f855a;
+    background-color: #345c48;
 }
 
 .btn-delete {
-    background-color: #e53e3e;
+    background-color: #aa5e5e;
 }
 
 .btn-delete:hover {
-    background-color: #c53030;
+    background-color: #772e2e;
 }
 
 /* Alerta de validación */
 .validation-alert {
     background-color: #fff5f5;
-    color: #c53030;
+    color: #be7171;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 15px;
